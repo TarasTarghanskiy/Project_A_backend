@@ -38,4 +38,22 @@
         </dependency>
     </dependencies>
 
+
+    <profiles>
+        <profile>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <id>dev</id>
+            <properties>
+                <database.url>
+                    jdbc:mysql://localhost:3306/project_a_database?characterEncoding=utf-8
+                </database.url>
+                <database.password>
+                    root
+                </database.password>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
